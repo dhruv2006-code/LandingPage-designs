@@ -21,6 +21,7 @@ main{
     height: 100%;
     background: url(./car.jpg);
     background-size: cover;
+    background-position: center;
 }
 header{
     width: 100%;
@@ -80,4 +81,28 @@ header{
     align-items: center;
     gap:10px;
     width: 20%;
+}
+@media (max-width: 900px){
+    .brand{
+        font-size: 1.5rem;
+    }
+    #Navigations{
+        display: none;
+    }
+    .Other h3{
+        font-size: 0.6rem;
+    }
+     .Other button{
+            padding: 10px 10px;
+        font-size: 0.6rem;
+    }
+    .globe{
+        font-size: 2rem;
+    }
+    .BrandLine{
+        width: 70%;
+    }
+    .BrandLine h3{
+        font-size: 1rem;
+    }
 }
