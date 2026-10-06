@@ -1,0 +1,47 @@
+@font-face {
+    font-family: primary;
+    src: url(./THRUST__.TTF);
+}
+@font-face {
+    font-family: secondary;
+    src: url(./Typo_Round_Light_Demo.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: secondary;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: url(./car.jpg);
+    background-size: cover;
+}
+header{
+    width: 100%;
+    color: white;
+    padding: 12px 12px;
+}
+.brand{
+    font-family: primary;
+    font-weight: 300;
+    font-size: 3rem;
+}
+#primaryNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Navigations{
+    
+}
+.Other{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
