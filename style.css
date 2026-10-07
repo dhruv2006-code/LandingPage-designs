@@ -19,7 +19,7 @@ html,body{
 main{
     width: 100%;
     height: 100%;
-    background: url(./car.jpg);
+    background: url(./wallpaper.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -69,18 +69,99 @@ header{
     border: none;
     font-weight: 600;
 }
+.writings{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 40px;
+}
 .globe{
     color: white;
     padding: 0px 12px;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
     border-right:3px solid white;
 }
 .BrandLine{
     display: flex;
     align-items: center;
     gap:10px;
+    width: 70%;
+    color: white;
+    font-size: 0.8rem;
+}
+.BrandLine h3{
     width: 20%;
+}
+.BigLine{
+background: radial-gradient(circle at right bottom, #0000005d 1%, #fcfcfc 46%);
+ font-size: 4rem;
+ max-width: 45%;
+ color: transparent;
+-webkit-background-clip: text;
+}
+.SmallLine{
+    max-width: 35%;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+.getStarted{
+    width: fit-content;
+     padding: 4px 12px;
+     display: flex;
+     align-items: center;
+     font-weight: 600;
+     gap: 15px;
+     font-size: 1rem;
+     border-radius: 50px;
+     border: none;
+     background-color: rgba(203, 200, 200, 0.648);
+}
+.getStarted .right{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+.getStarted:hover .right{
+    transform: rotate(-60deg);
+}
+.boxes{
+    display: flex;
+    gap: 2%;
+}
+.box1{
+      width: 15%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.023);
+    backdrop-filter: blur(10px);
+    box-shadow: -2px -1px 2px rgba(207, 205, 205, 0.368);
+}
+.box2{
+    width: 16%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px 15px;
+    border-radius: 12px;
+    background: rgba(255, 254, 254, 0.831);
+    color: black;
+}
+.box1 h2{
+    font-size: 3rem;
+      font-weight: 400;
+}
+.box2 h2{
+        font-size: 3rem;
+      font-weight: 400;
 }
 @media (max-width: 900px){
     .brand{
@@ -101,6 +182,7 @@ header{
     }
     .BrandLine{
         width: 70%;
+        margin: auto;
     }
     .BrandLine h3{
         font-size: 1rem;
