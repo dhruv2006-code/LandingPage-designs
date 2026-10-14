@@ -97,12 +97,12 @@ header{
 .BigLine{
 background: radial-gradient(circle at right bottom, #0000005d 1%, #fcfcfc 46%);
  font-size: 4rem;
- max-width: 45%;
+    width: 45%;
  color: transparent;
--webkit-background-clip: text;
+background-clip: text;
 }
 .SmallLine{
-    max-width: 35%;
+    width: 35%;
     letter-spacing: 2px;
     font-size: 1rem;
 }
@@ -164,6 +164,11 @@ background: radial-gradient(circle at right bottom, #0000005d 1%, #fcfcfc 46%);
       font-weight: 400;
 }
 @media (max-width: 900px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .brand{
         font-size: 1.5rem;
     }
@@ -177,6 +182,10 @@ background: radial-gradient(circle at right bottom, #0000005d 1%, #fcfcfc 46%);
             padding: 10px 10px;
         font-size: 0.6rem;
     }
+    .writings{
+        align-items: center;
+        padding: 3rem 0.2rem;
+    }
     .globe{
         font-size: 2rem;
     }
@@ -185,6 +194,34 @@ background: radial-gradient(circle at right bottom, #0000005d 1%, #fcfcfc 46%);
         margin: auto;
     }
     .BrandLine h3{
-        font-size: 1rem;
+        font-size: 0.6rem;
+        width: 40%;
+    }
+    .BigLine{
+    font-size: 3rem;
+     text-align: center;
+     width: 100%;
+    }
+    .SmallLine{
+        font-size: 0.6rem;
+        width: 70%;
+        text-align: center;
+    }
+    .boxes{
+        gap: 2rem;
+    }
+    .box1{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    .box1 h2{
+        font-size:2.3rem;
+    }
+      .box2{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    .box2 h2{
+        font-size:2.3rem;
     }
 }
