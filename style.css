@@ -179,6 +179,23 @@ background-clip: text;
         font-size: 3rem;
       font-weight: 400;
 }
+#about{
+    
+}
+.elem{
+    padding:1rem 3rem;
+    padding-top: 5rem;
+    border-bottom: 4px solid black;
+}
+.elem img{
+    width: 30%;
+    height: 30%;
+    display: none;
+    object-fit: cover;
+}
+.elem h1{
+    font-size: 4rem;
+}
 @media (max-width: 900px){
     main{
         display: flex;
