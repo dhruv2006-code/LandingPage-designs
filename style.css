@@ -6,17 +6,21 @@
     font-family: secondary;
     src: url(./Typo_Round_Light_Demo.otf);
 }
+@font-face {
+    font-family: about;
+    src: url(./gafter.otf);
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: secondary;
 }
 html,body{
     width: 100%;
     height: 100%;
 }
 main{
+    font-family: secondary;
     width: 100%;
     height: 100%;
     background: url(./wallpaper.jpg);
@@ -180,9 +184,13 @@ background-clip: text;
       font-weight: 400;
 }
 #about{
-    margin-top: 12vh;
+    margin-top: 20vh;
     animation: reveal;
     animation-timeline: view();
+    overflow-x: hidden;
+}
+#about::-webkit-scrollbar{
+    display: none;
 }
 @keyframes reveal{
     0%{
@@ -199,29 +207,33 @@ background-clip: text;
     height: fit-content;
     display: flex;
     align-items: center;
+    font-family: about;
     padding:1rem 1rem;
     padding-top: 4rem;
     border-bottom: 4px solid black;
     position: relative;
 }
 .elem:nth-child(1):hover{
-    color: rgb(255, 123, 0);
-    letter-spacing: 4px;
+    color:white;
+    letter-spacing: 10px;
     transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    background-color: grey;
+    background-color: black;
 }
 .elem:nth-child(2):hover{
-    color: rgb(255, 123, 0);
-    letter-spacing: 4px;
+    color:white;
+    letter-spacing: 10px;
+    background-color: black;
     transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
       
 }.elem:nth-child(3):hover{
-    color: rgb(255, 123, 0);
-    letter-spacing: 4px;
+    color: white;
+    letter-spacing: 10px;
+    background-color: black;
     transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }.elem:nth-child(4):hover{
-    color: rgb(255, 123, 0);
-    letter-spacing: 4px;
+    color: white;
+    letter-spacing: 10px;
+    background-color: black;
     transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .elem img{
@@ -236,6 +248,7 @@ background-clip: text;
 .elem h1{
     text-transform: uppercase;
     font-size: 5rem;
+    font-weight: 300;
 }
 .elem .arrow{
     display: inline-block;
