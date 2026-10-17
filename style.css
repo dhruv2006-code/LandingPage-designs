@@ -193,6 +193,7 @@ background-clip: text;
     margin-top: 20vh;
     animation: reveal;
     animation-timeline: view();
+    animation-range: entry 0% exit 80%;
     overflow-x: hidden;
 }
 #about::-webkit-scrollbar{
@@ -201,7 +202,7 @@ background-clip: text;
 @keyframes reveal{
     0%{
     opacity: 0;
-    scale: 0.50;
+    scale: 0.70;
     }
     50%{
     opacity: 1;
