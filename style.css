@@ -10,6 +10,10 @@
     font-family: about;
     src: url(./gafter.otf);
 }
+@font-face {
+    font-family: kregan;
+    src: url(./Kregan\ DEMO.otf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -267,6 +271,21 @@ background-clip: text;
 .elem:hover h1>i{
     transform: rotate(-30deg);
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#feature{
+    width: 100%;
+    height: 300vh;
+    animation: slideUp;
+    animation-timeline: scroll();
+    animation-range: entry 10% exit 80%;
+}
+.featLine span{
+    font-size: 3rem;
+    font-family: kregan;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+@keyframes slideUp{
 }
 @media (max-width: 900px){
     main{
