@@ -27,6 +27,12 @@ main{
     background-size: cover;
     background-position: center;
 }
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
 header{
     width: 100%;
     color: white;
@@ -243,7 +249,7 @@ background-clip: text;
     object-fit: cover;
     position: absolute;
     border-radius: 12px;
-    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .elem h1{
     text-transform: uppercase;
