@@ -254,7 +254,7 @@ background-clip: text;
     object-fit: cover;
     position: absolute;
     border-radius: 12px;
-    transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .elem h1{
     text-transform: uppercase;
@@ -275,17 +275,79 @@ background-clip: text;
 #feature{
     width: 100%;
     height: 300vh;
+    padding: 4rem 2rem;
     animation: slideUp;
     animation-timeline: scroll();
-    animation-range: entry 10% exit 80%;
+    animation-range: entry 10% exit 90%;
+}
+@keyframes slideUp {
+    0%{
+        background-color: white;
+    }
+    10%{
+        background-color: white;
+    }
+    30%{
+        background-color: white;
+    }
+    35%{
+        background-color: black;
+    }
+    90%{
+        background-color: black;
+    }
 }
 .featLine span{
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: kregan;
     font-weight: 700;
     letter-spacing: 4px;
 }
-@keyframes slideUp{
+.featLine{
+    font-size: 3rem;
+    animation: colorChange;
+    animation-timeline: view();
+}
+.featurebox{
+    margin-top: 15vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    gap: 5px;
+    margin-bottom: 3rem;
+    transform: translateY(40px);
+    opacity: 0;
+}
+.featurebox.animate{
+    animation: reveal 0.4s ease forwards;
+}
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.featurebox h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: red;
+}
+@keyframes colorChange{
+    0%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
 }
 @media (max-width: 900px){
     main{
