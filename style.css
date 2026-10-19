@@ -276,7 +276,7 @@ background-clip: text;
 #feature{
     position: relative;
     width: 100%;
-    height: 280vh;
+    height: 300vh;
     padding: 4rem 2rem;
     animation: slideUp;
     animation-timeline: scroll();
@@ -337,12 +337,33 @@ background-clip: text;
         transform: translateY(0);
     }
 }
-#feature:nth-child(1){
+.featurebox:nth-child(2){
+    color:white;
+    font-family: kregan;
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+.featurebox:nth-child(2) h3{
+    letter-spacing: 15px;
+}
+.featurebox:nth-child(2) span{
+    color:orange;
+}
+.featurebox:nth-child(3){
     color:white;
     font-family: kregan;
     font-size: 5rem;
     letter-spacing: 5px;
 }
+.featurebox:nth-child(3) h3{
+    color:white;
+    font-family: kregan;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    padding: 15px 15px;
+   background-color: orange;
+}
+
 @keyframes colorChange{
     0%{
         color: black;
