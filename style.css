@@ -7,7 +7,7 @@
     src: url(./Typo_Round_Light_Demo.otf);
 }
 @font-face {
-    font-family: about;
+    font-family: products;
     src: url(./gafter.otf);
 }
 @font-face {
@@ -194,14 +194,14 @@ background-clip: text;
         font-size: 3rem;
       font-weight: 400;
 }
-#about{
+#products{
     margin-top: 20vh;
     animation: reveal;
     animation-timeline: view();
     animation-range: entry 0% exit 80%;
     overflow-x: hidden;
 }
-#about::-webkit-scrollbar{
+#products::-webkit-scrollbar{
     display: none;
 }
 @keyframes reveal{
@@ -219,7 +219,7 @@ background-clip: text;
     height: fit-content;
     display: flex;
     align-items: center;
-    font-family: about;
+    font-family: products;
     padding:1rem 1rem;
     padding-top: 4rem;
     border-bottom: 4px solid black;
