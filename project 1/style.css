@@ -372,24 +372,41 @@ background-clip: text;
 }
 section.about{
     width: 100%;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 .about-line{
     font-family: brush;
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: 300;
-    position: relative;
-
+    justify-self: center;
+}
+.about-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    padding: 100px 0px;
+}
+.about-images img:nth-child(1){
+    rotate: -20deg;
+}
+.about-images img:nth-child(2){
+    rotate: 20deg;
+}.about-images img:nth-child(3){
+    rotate: 50deg;
+}.about-images img:nth-child(4){
+    rotate: -20deg;
 }
 .about-images img{
-    position: absolute;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
-    gap: 30px;
+    padding: 12px;
+    background-color: black;
+    rotate: 20deg;
+}
+.about-images img:hover{
+    filter: blur(3px);
 }
 @keyframes colorChange{
     0%{
