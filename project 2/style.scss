@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(250, 250, 223);
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+section.hero{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    #hero-img{
+        position: absolute;
+        width: 80%;
+        left: 50%;
+    }
+}
