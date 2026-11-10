@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,body{
     width: 100%;
     height: 100%;
@@ -15,14 +16,12 @@ main{
     height: 100%;
 }
 section.hero{
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 36px);
+    height: calc(100vh - 46px);
+    margin: 23px auto;
+    background-image: url(./main-img.avif);
     background-size: cover;
     background-position: center;
-    position: relative;
-    #hero-img{
-        position: absolute;
-        width: 80%;
-        left: 50%;
-    }
+    border: 7px solid white;
+    border-radius: 25px;
 }
