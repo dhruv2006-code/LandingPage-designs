@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +23,39 @@ section.hero {
   width: calc(100% - 36px);
   height: calc(100vh - 46px);
   margin: 23px auto;
+  padding-top: 1rem;
   background-image: url(./main-img.avif);
   background-size: cover;
   background-position: center;
-  border: 7px solid white;
   border-radius: 25px;
+}
+section.hero header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.hero nav {
+  background-color: rgb(189, 88, 189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+section.hero nav .nav-img {
+  width: 2rem;
+  height: 2rem;
+}
+section.hero nav .signUp {
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: rgb(78, 50, 78);
+  background-color: rgb(235, 164, 235);
+  border: 1px solid rgba(0, 0, 0, 0.612);
+}
+section.hero .event-date {
+  color: rgb(189, 88, 189);
+  font-family: "Momo Signature", cursive;
 }/*# sourceMappingURL=style.css.map */
