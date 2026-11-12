@@ -8,6 +8,10 @@
         align-items:center;
         justify-content: center;
 }
+@font-face {
+    font-family: PP frame;
+    src: url(./pp\ frame.woff2);
+}
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 html,body{
     width: 100%;
@@ -34,7 +38,7 @@ section.hero{
         @include flex();
      }
      nav{
-        background-color: rgb(189, 88, 189);
+        background-color: rgb(204, 167, 228);
         @include flex();
         gap: 8rem;
         padding: 0.5rem;
@@ -48,12 +52,60 @@ section.hero{
             border-radius: 12px;
             font-size: 1rem;
             color:  rgb(78, 50, 78);
-            background-color: rgb(235, 164, 235);
+            background-color: rgb(249, 191, 249);
             border: 1px solid rgba(0, 0, 0, 0.612);
         }
      }
+}
+.hero-line{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 30px;
      .event-date{
-        color: rgb(189, 88, 189);
+        color: rgb(224, 145, 224);
         font-family: "Momo Signature", cursive;
+     }
+     h1{
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: white;
+        font-family: PP frame;
+        font-weight: 900;
+        font-size: 7rem;
+     }
+     .present{
+        color:white;
+        margin-top: -3rem;
+        @include flex();
+        h3{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+        }
+        .shopSante{
+            height: 40px;
+        }
+     }
+     .discoverBtn{
+        
+       button{
+        padding: 15px;
+        border-radius: 12px;
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+       }
+       .Discover{
+        background-color: rgb(204, 167, 228);
+        color:rgb(117, 42, 168);
+       }
+       .sign{
+        background-color: rgb(186, 241, 197);
+        color: rgb(49, 94, 58);
+       }
      }
 }
